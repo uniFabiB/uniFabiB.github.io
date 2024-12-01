@@ -1,0 +1,74 @@
+body{margin:0}
+html,body{font-family:"Verdana",sans-serif;font-size:20px;line-height:1.5}
+h1,h2{font-family:"Segoe UI",sans-serif;font-weight:normal;margin:10px 0;text-align:center}
+h1{font-size:30px;letter-spacing:4px}
+h2{font-size:24px;letter-spacing:2px}
+
+a{text-decoration:none;color:inherit}
+.link:hover{text-decoration-line:underline}
+.paper_title{font-style:italic!important}
+
+.top_bot{position:fixed;width:100%;z-index:1}
+.top{top:0}
+.bottom{bottom:0}
+.shadow{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,12.0)}
+.padding_16{padding-top:16px!important;padding-bottom:16px!important}
+.padding_24{padding-top:24px!important;padding-bottom:24px!important}
+.padding_32{padding-top:32px!important;padding-bottom:32px!important}
+.padding_64{padding-top:64px!important;padding-bottom:64px!important}
+.padding_12_24{padding:12px 24px!important}
+.text_center{text-align:center!important}
+.text_left{text-align:left!important}
+.font_15{font-size:15px!important}
+
+.vertical{display:block}
+
+.left{float:left!important}
+.right{float:right!important}
+.center{float:center!important}
+
+@media (max-width:699px){.show_large.hide_small{display:none!important}}
+@media (min-width:700px){.show_small.hide_large{display:none!important}}
+
+/* menu items */
+
+.vertical_item{display:block;text-align:center}
+.menu_item_shown{display:block!important}
+.menu_item_hidden{display:none!important}
+.button:hover{color:#000!important;background-color:#ccc!important}
+.button{text-decoration:none;color:inherit}
+.horizontal_item{display:inline-block}
+
+/* horizontal,vertical depending on screen */
+.layoutHorVerContainer{width:100%}
+@media (max-width:1199px){.contactContainer{width: 0%;min-width: 12em;margin:auto;}}
+@media (min-width:1200px){.contactContainer{margin-left: max(calc(25% - 12em - 5em), 5%);min-width:12em;position:fixed}}
+@media (max-width:1199px){.mainContainer{margin:auto;width:80%}}
+@media (min-width:1200px){.mainContainer{margin:auto;width:50%}}
+
+
+
+/* content */
+.cv_year{text-align:left;padding:8px 16px;min-width: 4.8em;}
+.cv_text{text-align:left;padding:8px 16px}
+td{vertical-align:top}
+
+.publications_item,.conference_item{padding:12px 16px;text-align:left}
+
+/* colors */
+/*
+original
+    grey    #aaaaaa
+mcmaster (https://brand.mcmaster.ca/guidelines_introduction/visual-identity-guidelines/#tab-content-colour-palette)
+    marron: #7A003C
+    gold:   #FDBF57
+    grey:   #495965
+*/
+:root {
+    --color_accend: #7A003C;
+    --color_grey: #495965;
+}
+  
+.nav_color,.nav_color:hover{color:#ffffff!important;background-color:var(--color_accend)!important}
+.color_grey{color: var(--color_grey)!important;}
+.link:hover{color: var(--color_accend)!important;}
