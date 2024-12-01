@@ -49,8 +49,10 @@ a{text-decoration:none;color:inherit}
 
 
 /* content */
-.cv_year{text-align:left;padding:8px 16px;min-width: 4.8em;}
-.cv_text{text-align:left;padding:8px 16px}
+.cv_year,.teaching_year{text-align:left;padding:8px 16px}
+.cv_year{min-width: 4.8em}
+.teaching_year{min-width: 5.7em}
+.cv_text,.teaching_text{text-align:left;padding:8px 16px}
 td{vertical-align:top}
 
 .publications_item,.conference_item{padding:12px 16px;text-align:left}
