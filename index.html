@@ -1,11 +1,290 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>redirecting page</title>
-     <meta charset="UTF-8" />
-     <meta http-equiv="refresh" content="0; URL=https://www.c3s.uni-hamburg.de/rtg2583/people/phd-candidates/bleitner" />
-   </head>
-   <body>
-     <p>The page you are looking for is <a href="https://www.c3s.uni-hamburg.de/rtg2583/people/phd-candidates/bleitner">here</a>.</p>
-   </body>
+<html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fabian bleitner</title>
+  <link rel="icon" type="image/x-icon" href="siteResources/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- navbar -->
+<div class="nav_color top_bot top">
+  <div class="shadow" style="width:100%">
+    <!--<a href="#" class="button padding_12_24 show_large hide_small">Home</a>-->
+    <a href="#contact" class="horizontal_item button padding_12_24 show_large hide_small">Contact</a>
+    <a href="#cv" class="horizontal_item button padding_12_24 show_large hide_small">CV</a>
+    <a href="#publications" class="horizontal_item button padding_12_24 show_large hide_small">Publications</a>
+    <a href="#teaching" class="horizontal_item button padding_12_24 show_large hide_small">Teaching</a>
+    <a href="#conferences" class="horizontal_item button padding_12_24 show_large hide_small">Conferences</a>
+    
+    <!-- navbar on small screens -->
+    <a class="vertical_item button padding_12_24 hide_large show_small" onclick="toogleSmallScreen()">Menu</a>
+    <div id="navDemo" class="top" style="display:none">
+      <!-- expanded menu -->
+      <!--<a href="#" class="vertical_item button padding_12_24" onclick="toogleSmallScreen()">Home</a>-->
+      <a href="#contact" class="vertical_item button padding_12_24" onclick="toogleSmallScreen()">Contact</a>
+      <a href="#cv" class="vertical_item button padding_12_24" onclick="toogleSmallScreen()">CV</a>
+      <a href="#publications" class="vertical_item button padding_12_24" onclick="toogleSmallScreen()">Publications</a>
+      <a href="#teaching" class="vertical_item button padding_12_24" onclick="toogleSmallScreen()">Teaching</a>
+      <a href="#conferences" class="vertical_item button padding_12_24" onclick="toogleSmallScreen()">Conferences</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div style="margin-top:46px">
+
+  <div class="layoutHorVerItem contactContainer">
+  
+    <!-- contact -->
+    <div class="text_center padding_64" id="contact">
+      <img src="resources/portrait.jpg" alt="portrait" style="width:10em;"/>
+      <h1>Contact</h1>
+      <div class="text_left">
+        <img src="siteResources/email.svg" alt="email icon" style="height:1em;"/> <a class="link" onclick="decodeEmail();event.preventDefault();" id="contactEmail" href="">click to reveal</a>
+        <br>
+        <img src="siteResources/location.svg" alt="location icon" style="height:1em;"/> <a class="link" href="https://maps.app.goo.gl/G4maC4ATVLbGnUKfA">Hamilton Hall 414</a>
+        <br>
+        <img src="siteResources/orcid.svg" alt="orcid icon" style="height:1em;"/> <a class="link" href="https://orcid.org/0000-0001-9865-7163">Orcid</a>
+        <br>
+        <img src="siteResources/googleScholar.svg" alt="google scholar icon" style="height:1em;"/> <a class="link" href="https://scholar.google.ca/citations?user=oA_WFIsAAAAJ">Google Scholar</a>
+        <br>
+        <img src="siteResources/researchGate.svg" alt="research gate icon" style="height:1em;" /> <a class="link" href="https://www.researchgate.net/profile/Fabian-Bleitner">ResearchGate</a>
+        <br>
+        <img src="siteResources/github.svg" alt="github gate icon" style="height:1em;" /> <a class="link" href="https://www.github.com/unifabib">Github</a>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="layoutHorVerItem mainContainer">
+  
+    <!-- cv -->
+    <div class="text_center padding_64" id="cv">
+      <h1>Academic CV</h1>
+      <div><!-- max-width:800px -->
+        <table style="width:wrap-content;margin: auto;">
+          <tr>
+            <td class="cv_year">2024-</td>
+            <td class="cv_text">Postdoctoral Fellow<br>McMaster University
+            <br>Research group of <a class="link protas">Bartosz Protas</a></td>
+          </tr>
+          <tr>
+            <td class="cv_year">2020-2024</td>
+            <td class="cv_text">PhD Student<br>University of Hamburg
+            <br><a class="link" href="resources/dissertation.pdf">Thesis</a> [<a class="link" href="https://nbn-resolving.org/urn:nbn:de:gbv:18-ediss-119738">Official</a>, <a class="link" href="https://arxiv.org/abs/2409.14230">Arxiv</a>] supervised by <a class="link nobili">Camilla Nobili</a></td>
+          </tr>
+          <tr>
+            <td class="cv_year">2018-2020</td>
+            <td class="cv_text">Master Student<br>University of Hamburg</a>
+            <br><a class="link" href="resources/masterthesis.pdf">Thesis</a> supervised by <a class="link nobili">Camilla Nobili</a></td>
+          </tr>
+          <tr>
+            <td class="cv_year">2012-2017</td>
+            <td class="cv_text">Bachelor Student<br>University of Würzburg
+            <br><a class="link" href="resources/bachelorthesis.pdf">Thesis</a> supervised by <a class="link klingenberg" href="https://ifm.mathematik.uni-wuerzburg.de/~klingen/">Christian Klingenberg</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- publications -->
+    <div class="padding_64" id="publications">
+      <h1>Publications</h1>
+      <div class="publications_list">
+      
+        <div class="publications_item">
+          Fabian Bleitner, <a class="link nobili">Camilla Nobili</a>, 2024 <a class="link paper_title" href="resources/bleitnerNobili2024jfm.pdf">Scaling laws for Rayleigh-Bénard convection between Navier-slip boundaries</a>, Journal of Fluid Mechanics (998) [<a class="link bn2024jfm">Journal</a>, <a class="link" href="https://arxiv.org/abs/2404.14936">Arxiv</a>]
+        </div>
+      
+        <div class="publications_item">
+          Fabian Bleitner, <a class="link nobili">Camilla Nobili</a>, 2024 <a class="link paper_title" href="resources/bleitnerNobili2024nonlinearity.pdf">Bounds on buoyancy driven flows with Navier-slip conditions on rough boundaries</a>, Nonlinearity (37) [<a class="link bn2024nonlin">Journal</a>, <a class="link" href="https://arxiv.org/abs/2301.00226">Arxiv</a>]
+        </div>
+        
+        <div class="publications_item">
+          Fabian Bleitner, <a class="link carlson">Elizabeth Carlson</a>, <a class="link nobili">Camilla Nobili</a>, 2024 <a class="link paper_title" href="resources/bleitnerCarlsonNobili2024arxiv.pdf">Large time behaviour of the 2D thermally non-diffusive Boussinesq equations with Navier-slip boundary conditions</a>, Preprint [<a class="link bcn2024">Arxiv</a>]
+        </div>
+        
+        <div class="publications_item">
+          Fabian Bleitner, <a class="link nobili">Camilla Nobili</a>, 2023 <a class="link paper_title" href="resources/bleitnerNobili2023hyperdiffusion.pdf">Lower bounds for the advection-hyperdiffusion equation</a>, in <a class="link" href="https://doi.org/10.1007/978-3-031-45158-4">Modeling, Simulation and Optimization of Fluid Dynamic Applications</a>, Springer [<a class="link bn2023lower">Journal</a>, <a class="link" href="https://arxiv.org/abs/2302.13078">Arxiv</a>]
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- teaching -->
+    <div class="text_center padding_64" id="teaching">
+      <h1>Teaching</h1>
+      <div><!-- max-width:800px -->
+        <table style="width:wrap-content;margin: auto;">
+          <!--
+          <tr>
+            <td class="cv_year">Office Hours</td>
+            <td class="cv_text" style="padding-bottom:16px">Mo, Th 15:00 - 16:00 in <a class="link" href="https://maps.app.goo.gl/G4maC4ATVLbGnUKfA">Hamilton Hall 414</a></td>
+          </tr>
+          <tr style="width:wrap-content;margin: auto;"><td colspan="2"><h2>Courses</h2></td></tr>
+          -->
+          
+          <tr>
+            <td class="cv_year">Winter 2025</td>
+            <td class="cv_text">Introduction to Analysis (Math 3IA3)
+              <br>McMaster University</td>
+          </tr>
+          <tr>
+            <td class="cv_year">Fall 2024</td>
+            <td class="cv_text">Engineering Mathematics (Math 1ZA3)
+              <br>McMaster University</td>
+          </tr>
+          <tr>
+            <td class="cv_year">Spring 2024</td>
+            <td class="cv_text">Optimization in Banach spaces
+              <br>University of Hamburg</td>
+          </tr>
+          <tr>
+            <td class="cv_year">Fall 2023</td>
+            <td class="cv_text">Analysis for Engineers III<br>
+              Hamburg University of Technology</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- conferences -->
+    <div class="padding_64" id="conferences">
+      <h1>Conferences/Talks</h1>
+      <div class="conference_list">
+        
+        <div class="conference_item">
+          <a class="link" href="https://www.sema.org.es/en/cedya2024">Congress of Differential Equations and Applications/Congress of Applied Mathematics</a>, 2024, Basque Center for Applied Mathematics, Bilbao, Spain
+        </div>
+        
+        <div class="conference_item">
+          <a class="link" href="https://www.c3s.uni-hamburg.de/rtg2583/teaching/workshops/workshop-maerz-2024.html">Workshop on Modeling, Simulation & Optimization of Fluid Dynamic Applications</a>, 2024, University of Hamburg, Groß Schwansee, Germany
+        </div>
+        
+        <div class="conference_item">
+          <a class="link" href="https://www.surrey.ac.uk/school-mathematics-and-physics/events/mathematics-seminars#dynamical">Dynamical Systems and Partial Differential Equations Seminar</a>, 2024, University of Surrey, Guildford, United Kingdom
+        </div>
+
+        <div class="conference_item">
+          <a class="link" href="https://www.epfl.ch/labs/amcv/amcv/events/young-researcher-workshop-enjoying-probability-and-fluids-in-lausanne/">Enjoying Probability and Fluids in Lausanne</a>, 2023, École Polytechnique Fédérale de Lausanne, Lausanne, Switzerland
+        </div>
+        
+        <div class="conference_item">
+          <a class="link" href="https://www.uni-muenster.de/MathematicsMuenster/events/2023/fluids23.shtml">Workshop on Stability, Mixing and Fluid Dynamics</a>, 2023, Westfälische Wilhelms-Universität, Münster, Germany
+        </div>
+        
+        <div class="conference_item">
+          <a class="link" href="https://sites.google.com/view/icl-stable-chaos/home">Stability and Dynamics in Fluid Mechanics and Kinetic Theory</a>, 2023, Imperial College, London, United Kingdom
+        </div>
+        
+        <div class="conference_item">
+          <a class="link" href="https://www.siam.org/conferences-events/past-event-archive/ds23/">Applications of Dynamical Systems</a>, 2023, Society for Industrial and Applied Mathematics, Portland, United States of America
+        </div>
+
+        <div class="conference_item">
+          <a class="link" href="https://user.math.uni-kiel.de/~malte-braack/cse2023/index">Workshop on Modeling, Simulation & Optimization of Fluid Dynamic Applications</a>, 2023, Christian-Albrechts-Universität zu Kiel, Groß Schwansee, Germany
+        </div>
+
+        <div class="conference_item">
+          <a class="link" href="https://www.firedrakeproject.org/firedrake_22">Firedrake User and Developer Workshop</a>, 2023, Imperial College London, Totnes, United Kingdom
+        </div>
+
+        <div class="conference_item">
+          <a class="link" href="https://www.uni-ulm.de/mawi/iaa/forschung/horizons-in-non-linear-pdes-summer-school-2022/">Horizons in Nonlinear PDEs</a>, Summer School, 2022, Ulm University, Ulm, Germany
+        </div>
+
+        <div class="conference_item">
+          <a class="link" href="https://www.chairejeanmorlet.com/2575.html">Mathematical Advances in Geophysical Flows</a>, Research School, 2022, Centre International de Rencontres Mathématiques, Marseille, France
+        </div>
+
+        <div class="conference_item">
+          <a class="link" href="https://www.c3s.uni-hamburg.de/rtg2583/teaching/workshops/workshop-maerz-2022">Workshop on Modeling, Simulation & Optimization of Fluid Dynamic Applications</a>, 2022, University of Hamburg, Groß Schwansee, Germany
+        </div>
+
+        <div class="conference_item">
+          <a class="link" href="https://prague-sum.com/fluids-under-control-august-2021/">Fluids under Control</a>, 2021, Czech  Academy of Sciences, Prague, Czech Republic
+        </div>
+        
+        <div class="conference_item">
+          <a class="link" href="https://www.uni-ulm.de/mawi/iaa/forschung/seminare-tagungen-bis-2019/gradient-flows-and-variational-methods-in-pdes-winter-school-2019/">Gradient Flows and Variational Methods in PDEs</a>, Winter School, 2019, Ulm University, Ulm, Germany
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<!-- End Page Content -->
+
+<!-- footer -->
+<footer class="padding_24 text_center color_grey">
+  <div>2024</div>
+  <!--<a style="font-size:12px" class="link" href="https://github.com/">source code</a>-->
+</footer>
+
+<script>
+// links
+function changeLinks(className, link) {
+  var classElements = document.getElementsByClassName(className);
+  for(var i = 0; i < classElements.length; i++) {classElements[i].href=link;}
+}
+changeLinks("nobili","https://www.surrey.ac.uk/people/camilla-nobili");
+changeLinks("klingenberg","https://ifm.mathematik.uni-wuerzburg.de/~klingen/");
+changeLinks("protas","https://ms.mcmaster.ca/~bprotas/");
+changeLinks("carlson","https://sites.google.com/view/elizabethcarlsonmath");
+changeLinks("bn2024jfm","https://doi.org/10.1017/jfm.2024.899");
+changeLinks("bn2024nonlin","https://doi.org/10.1088/1361-6544/ad25bf");
+changeLinks("bcn2024","https://arxiv.org/abs/2309.05400");
+changeLinks("bn2023lower","https://doi.org/10.1007/978-3-031-45158-4_1");
+
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toogleSmallScreen() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf(" menu_item_shown") == -1) {
+    x.className += " menu_item_shown";
+  } else { 
+    x.className = x.className.replace(" menu_item_shown", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf(" menu_item_shown") == -1) {
+    x.className += " menu_item_shown";
+  } else { 
+    x.className = x.className.replace(" menu_item_shown", "");
+  }
+  }
+}
+
+function decodeEmail(){ //make email not machine easily readable
+  part0a = "mai";
+  part0b = "lto:";
+  partA = "ble";
+  partB = "itn";
+  partC = "ef@m";
+  partD = "cm";
+  partE = "as";
+  partF = "ter.ca";
+  element = document.getElementById("contactEmail");
+  element.textContent = partA+partB+partC+partD+partE+partF;
+  element.href = part0a+part0b+partA+partB+partC+partD+partE+partF;
+  element.onclick = "";
+}
+</script>
+
+
+</body>
 </html>
