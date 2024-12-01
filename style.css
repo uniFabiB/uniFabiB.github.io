@@ -43,7 +43,7 @@ a{text-decoration:none;color:inherit}
 .layoutHorVerContainer{width:100%}
 @media (max-width:1199px){.contactContainer{width: 0%;min-width: 12em;margin:auto;}}
 @media (min-width:1200px){.contactContainer{margin-left: max(calc(25% - 12em - 5em), 5%);min-width:12em;position:fixed}}
-@media (max-width:1199px){.mainContainer{margin:auto;width:80%}}
+@media (max-width:1199px){.mainContainer{margin:auto;width:95%}}
 @media (min-width:1200px){.mainContainer{margin:auto;width:50%}}
 
 
