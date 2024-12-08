@@ -16,7 +16,7 @@ a{text-decoration:none;color:inherit}
 .padding_24{padding-top:1.5em!important;padding-bottom:1.5em!important}
 .padding_32{padding-top:2em!important;padding-bottom:2em!important}
 .padding_64{padding-top:4em!important;padding-bottom:4em!important}
-.padding_12_24{padding:12px 24px!important}
+.padding_nav_bar{padding:12px 24px!important}
 .text_center{text-align:center!important}
 .text_left{text-align:left!important}
 .font_15{font-size:15px!important}
@@ -27,8 +27,8 @@ a{text-decoration:none;color:inherit}
 .right{float:right!important}
 .center{float:center!important}
 
-@media (max-width:53em){.show_large.hide_small{display:none!important}}
-@media (min-width:53.001em){.show_small.hide_large{display:none!important}}
+@media (max-width:60em){.show_large.hide_small{display:none!important}}
+@media (min-width:60.001em){.show_small.hide_large{display:none!important}}
 
 /* menu items */
 
