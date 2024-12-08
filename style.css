@@ -12,10 +12,10 @@ a{text-decoration:none;color:inherit}
 .top{top:0}
 .bottom{bottom:0}
 .shadow{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,12.0)}
-.padding_16{padding-top:16px!important;padding-bottom:16px!important}
-.padding_24{padding-top:24px!important;padding-bottom:24px!important}
-.padding_32{padding-top:32px!important;padding-bottom:32px!important}
-.padding_64{padding-top:64px!important;padding-bottom:64px!important}
+.padding_16{padding-top:1em!important;padding-bottom:1em!important}
+.padding_24{padding-top:1.5em!important;padding-bottom:1.5em!important}
+.padding_32{padding-top:2em!important;padding-bottom:2em!important}
+.padding_64{padding-top:4em!important;padding-bottom:4em!important}
 .padding_12_24{padding:12px 24px!important}
 .text_center{text-align:center!important}
 .text_left{text-align:left!important}
@@ -27,8 +27,8 @@ a{text-decoration:none;color:inherit}
 .right{float:right!important}
 .center{float:center!important}
 
-@media (max-width:849px){.show_large.hide_small{display:none!important}}
-@media (min-width:850px){.show_small.hide_large{display:none!important}}
+@media (max-width:53em){.show_large.hide_small{display:none!important}}
+@media (min-width:54em){.show_small.hide_large{display:none!important}}
 
 /* menu items */
 
@@ -42,21 +42,28 @@ a{text-decoration:none;color:inherit}
 /* horizontal,vertical depending on screen */
 .layoutHorVerContainer{width:100%}
 
+
+/*
 @media (max-width:1199px){.contactContainer{width: 0%;min-width: 12em;margin:auto;}}
 @media (min-width:1200px){.contactContainer{margin-left: max(calc(25% - 12em - 5em), 5%);min-width:12em;position:fixed}}
 @media (max-width:1199px){.mainContainer{margin:auto;width:95%}}
 @media (min-width:1200px){.mainContainer{margin:auto;width:50%}}
+*/
 
+@media (max-width:74em){.contactContainer{width: 0%;min-width: 12em;margin:auto;}}
+@media (min-width:75em){.contactContainer{margin-left: max(calc(25% - 12em - 5em), 5%);min-width:12em;position:fixed}}
+@media (max-width:74em){.mainContainer{margin:auto;width:95%}}
+@media (min-width:75em){.mainContainer{margin:auto;width:50%}}
 
 
 /* content */
-.cv_year,.teaching_year{text-align:left;padding:8px 16px}
+.cv_year,.teaching_year{text-align:left;padding:0.5em 1em}
 .cv_year{min-width: 4.8em}
 .teaching_year{min-width: 5.7em}
-.cv_text,.teaching_text{text-align:left;padding:8px 16px}
+.cv_text,.teaching_text{text-align:left;padding:0.5em 1em}
 td{vertical-align:top}
 
-.publications_item,.conference_item{padding:8px 16px;text-align:left}
+.publications_item,.conference_item{padding:0.5em 1em;text-align:left}
 
 .research_interest{padding:8px 16px;text-align:justify}
 
