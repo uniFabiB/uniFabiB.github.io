@@ -28,7 +28,7 @@ a{text-decoration:none;color:inherit}
 .center{float:center!important}
 
 @media (max-width:53em){.show_large.hide_small{display:none!important}}
-@media (min-width:54em){.show_small.hide_large{display:none!important}}
+@media (min-width:53.001em){.show_small.hide_large{display:none!important}}
 
 /* menu items */
 
@@ -43,16 +43,9 @@ a{text-decoration:none;color:inherit}
 .layoutHorVerContainer{width:100%}
 
 
-/*
-@media (max-width:1199px){.contactContainer{width: 0%;min-width: 12em;margin:auto;}}
-@media (min-width:1200px){.contactContainer{margin-left: max(calc(25% - 12em - 5em), 5%);min-width:12em;position:fixed}}
-@media (max-width:1199px){.mainContainer{margin:auto;width:95%}}
-@media (min-width:1200px){.mainContainer{margin:auto;width:50%}}
-*/
-
-@media (max-width:74em){.contactContainer{width: 0%;min-width: 12em;margin:auto;}}
+@media (max-width:74.999em){.contactContainer{width:0%;min-width: 12em!important;margin:auto;}}
 @media (min-width:75em){.contactContainer{margin-left: max(calc(25% - 12em - 5em), 5%);min-width:12em;position:fixed}}
-@media (max-width:74em){.mainContainer{margin:auto;width:95%}}
+@media (max-width:74.999em){.mainContainer{margin:auto;width:95%}}
 @media (min-width:75em){.mainContainer{margin:auto;width:50%}}
 
 
@@ -65,7 +58,7 @@ td{vertical-align:top}
 
 .publications_item,.conference_item{padding:0.5em 1em;text-align:left}
 
-.research_interest{padding:8px 16px;text-align:justify}
+.research_interest{padding:0.5em 1em;text-align:justify}
 
 /* colors */
 /*
