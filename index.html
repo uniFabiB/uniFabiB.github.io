@@ -23,7 +23,7 @@
     
     <!-- navbar on small screens -->
     <a class="vertical_item button padding_nav_bar hide_large show_small" onclick="toogleSmallScreen()">Menu</a>
-    <div class="top" style="display:none">
+    <div id="nav_menu" class="top" style="display:none">
       <!-- expanded menu -->
       <!--<a href="#" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">Home</a>-->
       <a href="#contact" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">Contact</a>
@@ -276,7 +276,7 @@ changeLinks("bn2023lower","https://doi.org/10.1007/978-3-031-45158-4_1");
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toogleSmallScreen() {
-  var x = document.getElementById("navDemo");
+  var x = document.getElementById("nav_menu");
   if (x.className.indexOf(" menu_item_shown") == -1) {
     x.className += " menu_item_shown";
   } else { 
@@ -288,7 +288,7 @@ function toogleSmallScreen() {
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {
-  var x = document.getElementById("navDemo");
+  var x = document.getElementById("nav_menu");
   if (x.className.indexOf(" menu_item_shown") == -1) {
     x.className += " menu_item_shown";
   } else { 
