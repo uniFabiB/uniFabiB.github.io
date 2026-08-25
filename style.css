@@ -70,9 +70,11 @@ td{vertical-align:top}
     --color_grey: #aaaaaa;
     --color_white: #ffffff;
 }
-  
-.button:hover{color:var(--color_white)!important}
-.button:hover{background-color:var(--color_other)!important}
+
+@media (hover: hover) {
+  .button:hover{color:var(--color_white)!important}
+  .button:hover{background-color:var(--color_other)!important}
+}
 .nav_color{color:var(--color_white)!important;background-color:var(--color_accend)!important}
 .color_grey{color: var(--color_grey)!important;}
 .link:hover{color: var(--color_accend)!important;}
