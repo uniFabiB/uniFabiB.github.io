@@ -35,8 +35,6 @@ a{text-decoration:none;color:inherit}
 .vertical_item{display:block;text-align:center}
 .menu_item_shown{display:block!important}
 .menu_item_hidden{display:none!important}
-.button:hover{color:#000!important;background-color:#ccc!important}
-.button{text-decoration:none;color:inherit}
 .horizontal_item{display:inline-block}
 
 /* horizontal,vertical depending on screen */
@@ -62,18 +60,19 @@ td{vertical-align:top}
 
 /* colors */
 /*
-original
-    grey    #aaaaaa
-mcmaster (https://brand.mcmaster.ca/guidelines_introduction/visual-identity-guidelines/#tab-content-colour-palette)
-    marron: #7A003C
-    gold:   #FDBF57
-    grey:   #495965
+    lachs:  #ff8c8c
+    teal:   #008c8c
 */
 :root {
-    --color_accend: #7A003C;
-    --color_grey: #495965;
+    --color_accend: #008c8c;
+    --color_other: #ff8c8c;
+    --color_black: #000000;
+    --color_grey: #aaaaaa;
+    --color_white: #ffffff;
 }
   
-.nav_color,.nav_color:hover{color:#ffffff!important;background-color:var(--color_accend)!important}
+.button:hover{color:var(--color_white)!important}
+.button:hover{background-color:var(--color_other)!important}
+.nav_color{color:var(--color_white)!important;background-color:var(--color_accend)!important}
 .color_grey{color: var(--color_grey)!important;}
 .link:hover{color: var(--color_accend)!important;}
