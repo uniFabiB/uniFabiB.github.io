@@ -76,8 +76,8 @@ td{vertical-align:top}
 @media (hover: hover) {
   .button:hover{background-color:var(--color_other)!important;color:var(--color_white)!important}
 }
-.button{-webkit-tap-highlight-color:transparent;transition:transform 0.1s ease}
-.button:active{transform:scale(0.94);background-color:var(--color_other)!important;color:var(--color_white)!important}
+.button{-webkit-tap-highlight-color:transparent;transition:transform 0.1s ease,background-color 0.1s ease,color 0.1s ease}
+.button:active,.button.pressed{transform:scale(0.95);background-color:var(--color_other)!important;color:var(--color_white)!important}
 .nav_color{color:var(--color_white)!important;background-color:var(--color_accend)!important}
 .color_grey{color: var(--color_grey)!important;}
 .link:hover{color: var(--color_accend)!important;}
