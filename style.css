@@ -1,4 +1,5 @@
 body{margin:0}
+html{color-scheme:light dark}
 html,body{font-family:"Verdana",sans-serif;font-size:20px;line-height:1.5}
 h1,h2{font-family:"Segoe UI",sans-serif;font-weight:normal;margin:10px 0;text-align:center}
 h1{font-size:30px;letter-spacing:4px}
@@ -71,6 +72,17 @@ td{vertical-align:top}
     --color_black: #000000;
     --color_grey: #aaaaaa;
     --color_white: #ffffff;
+    --bg_page: #ffffff;
+    --text_page: #000000;
+}
+
+body{background-color:var(--bg_page);color:var(--text_page)}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg_page: #121212;
+    --text_page: #e8e8e8;
+  }
 }
 
 @media (hover: hover) {
