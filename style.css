@@ -51,7 +51,7 @@ a{text-decoration:none;color:inherit}
 
 
 /* content */
-.contact_icon{height:1em;vertical-align:middle;margin-top:-0.1em}
+.contact_icon{height:1em;vertical-align:middle}
 .cv_year,.teaching_year{text-align:left;padding:0.5em 1em}
 .cv_year{min-width: 4.8em}
 .teaching_year{min-width: 5.7em}
