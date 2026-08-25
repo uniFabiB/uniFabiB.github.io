@@ -22,7 +22,7 @@
     <a href="#conferences" class="horizontal_item button padding_nav_bar show_large hide_small">Conferences</a>
 
     <!-- navbar on small screens -->
-    <a class="vertical_item button padding_nav_bar hide_large show_small" onclick="toogleMenuOnSmallScreen(this)">Menu</a>
+    <a id="menuButton" class="vertical_item button padding_nav_bar hide_large show_small" onclick="toogleMenuOnSmallScreen(this)">Menu</a>
     <div id="nav_menu" class="top" style="display:none">
       <!-- expanded menu -->
       <!--<a href="#" class="vertical_item button padding_nav_bar" onclick="toogleMenuOnSmallScreen(this)">Home</a>-->
@@ -334,27 +334,25 @@ changeLinks("bcn2025zamp","https://doi.org/10.1007/s00033-025-02440-x");
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toogleMenuOnSmallScreen(clickedButton) {
-  var x = document.getElementById("nav_menu");
-  if (x.className.indexOf(" menu_item_shown") == -1) {
-    x.className += " menu_item_shown";
+  var navMenu = document.getElementById("nav_menu");
+  if (navMenu.className.indexOf(" menu_item_shown") == -1) {
+    navMenu.className += " menu_item_shown";
   } else { 
-    x.className = x.className.replace(" menu_item_shown", "");
+    navMenu.className = navMenu.className.replace(" menu_item_shown", "");
     clickedButton.blur();
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-  var x = document.getElementById("nav_menu");
-  if (x.className.indexOf(" menu_item_shown") == -1) {
-    x.className += " menu_item_shown";
-  } else { 
-    x.className = x.className.replace(" menu_item_shown", "");
+// Hide menu when clicked outside of menu
+document.addEventListener("click", function(event) {
+  var navMenu = document.getElementById("nav_menu");
+  var menuButton = document.getElementById("menuButton");
+  console.log(event.target);
+  if (event.target != menuButton && !navMenu.contains(event.target)) {
+    navMenu.className = navMenu.className.replace(" menu_item_shown", "");
   }
-  }
-}
+});
+
 
 function decodeEmail(){ //make email not machine easily readable
   part0a = "mai";
