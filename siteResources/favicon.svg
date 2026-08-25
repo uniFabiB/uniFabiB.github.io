@@ -11,8 +11,6 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview19"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
@@ -37,7 +35,6 @@
       }
     </style>
   </defs>
-  <!-- Generator: Adobe Illustrator 28.7.2, SVG Export Plug-In . SVG Version: 1.2.0 Build 154)  -->
   <g
      id="g15"
      style="stroke-width:1;stroke-dasharray:none">
@@ -48,14 +45,14 @@
          id="g12"
          style="stroke-width:1;stroke-dasharray:none">
         <ellipse
-           style="fill:none;stroke:#7a003c;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:none;stroke:#ff8c8c;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
            id="path1871"
            cx="10"
            cy="8.5"
            rx="2.75"
            ry="2.75" />
         <path
-           style="fill:none;stroke:#7a003c;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:none;stroke:#ff8c8c;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
            id="path1873"
            sodipodi:type="arc"
            sodipodi:cx="10.139972"
@@ -68,7 +65,7 @@
            d="M 4.7776608,16.250486 A 7,7 0 0 1 10.139972,13.75 a 7,7 0 0 1 5.362311,2.500487"
            sodipodi:open="true" />
         <ellipse
-           style="fill:none;stroke:#495965;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:none;stroke:#008c8c;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
            id="path1358"
            cx="10"
            cy="10"
