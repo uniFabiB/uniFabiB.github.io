@@ -343,18 +343,15 @@ function toogleMenuOnSmallScreen(clickedButton) {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
+// When the user clicks anywhere outside of the open menu, close it
+document.addEventListener("click", function(event) {
   var x = document.getElementById("nav_menu");
-  if (x.className.indexOf(" menu_item_shown") == -1) {
-    x.className += " menu_item_shown";
-  } else { 
+  var menuButton = document.getElementById("menuToggleButton");
+  if (x.className.indexOf(" menu_item_shown") != -1 && !x.contains(event.target) && event.target != menuButton) {
     x.className = x.className.replace(" menu_item_shown", "");
   }
-  }
-}
+});
+
 
 function decodeEmail(){ //make email not machine easily readable
   part0a = "mai";
