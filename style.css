@@ -21,6 +21,10 @@ a{text-decoration:none;color:inherit}
 .text_left{text-align:left!important}
 .font_15{font-size:15px!important}
 
+
+.button{-webkit-tap-highlight-color:transparent;transition:transform 0.1s ease}
+.button:active{transform:scale(0.94)}
+
 .vertical{display:block}
 
 .left{float:left!important}
