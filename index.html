@@ -22,16 +22,16 @@
     <a href="#conferences" class="horizontal_item button padding_nav_bar show_large hide_small">Conferences</a>
 
     <!-- navbar on small screens -->
-    <a class="vertical_item button padding_nav_bar hide_large show_small" onclick="toogleSmallScreen()">Menu</a>
+    <a class="vertical_item button padding_nav_bar hide_large show_small" onclick="toogleMenuOnSmallScreen(this)">Menu</a>
     <div id="nav_menu" class="top" style="display:none">
       <!-- expanded menu -->
-      <!--<a href="#" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">Home</a>-->
-      <a href="#contact" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">Contact</a>
-      <a href="#research" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">Research</a>
-      <a href="#cv" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">CV</a>
-      <a href="#publications" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">Publications</a>
-      <a href="#teaching" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">Teaching</a>
-      <a href="#conferences" class="vertical_item button padding_nav_bar" onclick="toogleSmallScreen()">Conferences</a>
+      <!--<a href="#" class="vertical_item button padding_nav_bar" onclick="toogleMenuOnSmallScreen(this)">Home</a>-->
+      <a href="#contact" class="vertical_item button padding_nav_bar" onclick="toogleMenuOnSmallScreen(this)">Contact</a>
+      <a href="#research" class="vertical_item button padding_nav_bar" onclick="toogleMenuOnSmallScreen(this)">Research</a>
+      <a href="#cv" class="vertical_item button padding_nav_bar" onclick="toogleMenuOnSmallScreen(this)">CV</a>
+      <a href="#publications" class="vertical_item button padding_nav_bar" onclick="toogleMenuOnSmallScreen(this)">Publications</a>
+      <a href="#teaching" class="vertical_item button padding_nav_bar" onclick="toogleMenuOnSmallScreen(this)">Teaching</a>
+      <a href="#conferences" class="vertical_item button padding_nav_bar" onclick="toogleMenuOnSmallScreen(this)">Conferences</a>
     </div>
   </div>
 </div>
@@ -333,12 +333,13 @@ changeLinks("bcn2025zamp","https://doi.org/10.1007/s00033-025-02440-x");
 
 
 // Used to toggle the menu on small screens when clicking on the menu button
-function toogleSmallScreen() {
+function toogleMenuOnSmallScreen(clickedButton) {
   var x = document.getElementById("nav_menu");
   if (x.className.indexOf(" menu_item_shown") == -1) {
     x.className += " menu_item_shown";
   } else { 
     x.className = x.className.replace(" menu_item_shown", "");
+    clickedButton.blur();
   }
 }
 
